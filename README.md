@@ -7,8 +7,8 @@ Downloads known malicious IP adresses daily from [IPsum](https://github.com/stam
 :~$ mkdir /opt/ip-blacklist
 
 # download the blacklist scripts to the dir
-:~$ wget https://github.com/sysadt/UFW-Automatic-IP-Blacklisting/blob/main/ip-blacklist.sh -P /opt/ip-blacklist
-:~$ wget https://github.com/sysadt/UFW-Automatic-IP-Blacklisting/blob/main/update-blacklist.sh -P /opt/ip-blacklist
+:~$ wget https://raw.githubusercontent.com/sysadt/UFW-Automatic-IP-Blacklisting/main/ip-blacklist.sh -P /opt/ip-blacklist
+:~$ wget https://raw.githubusercontent.com/sysadt/UFW-Automatic-IP-Blacklisting/main/update-blacklist.sh -P /opt/ip-blacklist
 
 # changes permissions
 :~$ chmod 700 /opt/ip-blacklist/ip-blacklist.sh
