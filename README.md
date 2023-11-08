@@ -1,1 +1,22 @@
 # UFW-Automatic-IP-Blacklisting
+
+Downloads known malicious IP adresses daily from [IPsum](https://github.com/stamparm/ipsum) and blocks them with UFW.
+
+```
+# create dir for blacklist files
+:~$ mkdir /opt/ip-blacklist
+
+# download the blacklist scripts to the dir
+:~$ wget https://github.com/sysadt/UFW-Automatic-IP-Blacklisting/blob/main/ip-blacklist.sh -P /opt/ip-blacklist
+:~$ wget https://github.com/sysadt/UFW-Automatic-IP-Blacklisting/blob/main/update-blacklist.sh -P /opt/ip-blacklist
+
+# changes permissions
+:~$ chmod 700 /opt/ip-blacklist/ip-blacklist.sh
+:~$ chmod 755 /opt/ip-blacklist/update-blacklist.sh
+
+# add both scripts to crontab for daily runs
+:~$ crontab -e
+
+0 6 * * * /opt/ip-blacklist/update-blacklist.sh
+10 6 * * * /opt/ip-blacklist/ip-blacklist.sh
+```
