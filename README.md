@@ -10,7 +10,7 @@ Downloads known malicious IP adresses daily from [IPsum](https://github.com/stam
 :~$ wget https://raw.githubusercontent.com/sysadt/UFW-Automatic-IP-Blacklisting/main/ip-blacklist.sh -P /opt/ip-blacklist
 :~$ wget https://raw.githubusercontent.com/sysadt/UFW-Automatic-IP-Blacklisting/main/update-blacklist.sh -P /opt/ip-blacklist
 
-# changes permissions
+# change permissions
 :~$ chmod 700 /opt/ip-blacklist/ip-blacklist.sh
 :~$ chmod 755 /opt/ip-blacklist/update-blacklist.sh
 
