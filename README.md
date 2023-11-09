@@ -15,7 +15,7 @@ Downloads known malicious IP adresses daily from [IPsum](https://github.com/stam
 :~$ chmod 755 /opt/ip-blacklist/update-blacklist.sh
 
 # add both scripts to crontab for daily runs
-:~$ crontab -e
+:~$ sudo crontab -e
 
 0 6 * * * /opt/ip-blacklist/update-blacklist.sh
 10 6 * * * /opt/ip-blacklist/ip-blacklist.sh
