@@ -2,6 +2,8 @@
 
 Downloads known malicious IP adresses daily from [IPsum](https://github.com/stamparm/ipsum) and blocks them with UFW.
 
+CAREFUL: REALLY SLOW!
+
 ```
 # create dir for blacklist files
 :~$ mkdir /opt/ip-blacklist
