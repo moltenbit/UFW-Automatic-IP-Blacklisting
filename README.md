@@ -12,7 +12,7 @@ Downloads known malicious IP adresses daily from [IPsum](https://github.com/stam
 
 # change permissions
 :~$ chmod 700 /opt/ip-blacklist/ip-blacklist.sh
-:~$ chmod 755 /opt/ip-blacklist/update-blacklist.sh
+:~$ chmod 700 /opt/ip-blacklist/update-blacklist.sh
 
 # add both scripts to crontab for daily runs
 :~$ sudo crontab -e
